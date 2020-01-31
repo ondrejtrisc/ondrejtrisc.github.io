@@ -1,0 +1,58 @@
+@import 'colors';
+
+.under_construction {
+  background-color: red;
+  color: yellow;
+  font-size: 10rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  background-color: $myblack;
+  color: $mywhite;
+
+  nav {
+    display: flex;
+    flex-grow: 1;
+
+    .logo {
+      border: none;
+      width: auto;
+
+      img {
+        width: 3rem;
+      }
+    }
+
+    a {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $myblack;
+      color: $mywhite;
+      width: 25%;
+      border: 1px solid $mywhite;
+  }
+  }
+}

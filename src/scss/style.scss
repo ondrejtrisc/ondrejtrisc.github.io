@@ -27,7 +27,9 @@ body {
 header {
   width: 100%;
   position: fixed;
+  top: 0;
   display: flex;
+  z-index: 1;
   background-color: $myblack;
   color: $mywhite;
 
@@ -52,7 +54,39 @@ header {
       background-color: $myblack;
       color: $mywhite;
       width: 25%;
-      border: 1px solid $mywhite;
+      border-left: 1px solid $mywhite;
+      border-right: 1px solid $mywhite;
+    }
   }
+}
+
+main {
+  margin-top: 5rem;
+}
+
+.home {
+
+  .greeting {
+    background-image: url('/img/leaf.png');
+    background-size: 100vw auto;
+    height: 60vh;
+    position: relative;
+
+    .text {
+
+      position: absolute;
+      top: 20%;
+      right: 10%;
+      
+      font-size: 2rem;
+      color: $mywhite;
+      text-align: right;
+
+      .name {
+        color: $mygreen;
+      }
+    }
+
+    
   }
 }

@@ -108,3 +108,96 @@ main {
     }
   }
 }
+
+.contact_me {
+  background-color: $mydarkgreen;
+  color: $mywhite;
+  // height: 100vh;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .line {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      [type="text"] {
+        width: 49%;
+        background-color: $mydarkgreen;
+        border: none;
+        border-bottom: 1px solid $mywhite;
+            
+        &::placeholder {
+          color: $mywhite;
+        }
+
+        &:focus {
+          border: none;
+          border-bottom: 1px solid $mywhite;
+          outline: none;
+        }
+      }
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      textarea {
+        margin-top: 0.5rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    [type="submit"] {
+      width: 100%;
+      background-color: $myblack;
+      color: $mywhite;
+      border: none;
+      padding: 1rem;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .find {
+    width: 100%;
+    background-color: $myblack;
+    color: $mywhite;
+    text-align: center;
+    padding: 2rem 0 5rem 0;
+    margin-top: 3rem;
+
+    .links {
+      display: flex;
+      justify-content: center;
+    }  
+
+    img {
+        width: 100px;
+        margin: 0 3rem;
+    }
+  }
+}
+
+footer {
+  background-color: $mygrey;
+  text-align: center;
+  padding: 5rem;
+}

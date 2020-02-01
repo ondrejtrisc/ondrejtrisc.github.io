@@ -57,6 +57,11 @@ header {
       border-left: 1px solid $mywhite;
       border-right: 1px solid $mywhite;
     }
+
+    a:hover {
+      background-color: $mygreen;
+      color: $myblack;
+    }
   }
 }
 
@@ -85,8 +90,6 @@ main {
       .name {
         color: $mygreen;
       }
-    }
-
-    
+    }    
   }
 }

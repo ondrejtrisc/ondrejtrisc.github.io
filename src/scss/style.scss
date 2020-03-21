@@ -38,40 +38,48 @@ header {
   color: $mywhite;
 
   nav {
-    display: flex;
-    flex-grow: 1;
-
-    .logo {
-      border: none;
-      width: auto;
-
-      img {
-        width: 3rem;
-      }
-    }
-
-    a {
-      flex-grow: 1;
+    width: 100%;
+    
+    ul {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $myblack;
-      color: $mywhite;
-      width: 25%;
-      border-left: 1px solid $mywhite;
-      border-right: 1px solid $mywhite;
-    }
+      list-style-type: none;
+      margin: 0;
+      padding-inline-start: 0;
 
-    a:hover {
-      background-color: $mygreen;
-      color: $myblack;
+      li {
+        width: 25%;
+
+        a {
+          height: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $mywhite;
+          border-left: 1px solid $mywhite;
+          border-right: 1px solid $mywhite;
+        }
+
+        a:hover {
+          background-color: $mygreen;
+          color: $myblack;
+        }
+      }
+
+      .logo {
+        width: 3rem;
+        background-color: $mywhite;
+
+        a:hover {
+          background-color: $mywhite;
+        }
+
+        img {
+          width: 3rem;
+        }
+      }
     }
   }
 }
-
-// main {
-//   margin-top: 5rem;
-// }
 
 .home {
 
@@ -82,6 +90,7 @@ header {
   .greeting {
     background-image: url('/img/leaf.png');
     background-size: 100vw auto;
+    background-repeat: no-repeat;
     height: 60vh;
     position: relative;
 

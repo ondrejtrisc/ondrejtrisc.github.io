@@ -1,17 +1,5 @@
 @import 'colors';
 
-.under_construction {
-  background-color: red;
-  color: yellow;
-  font-size: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  height: 100vh;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -94,12 +82,12 @@ header {
     height: 60vh;
     position: relative;
 
-    &__text {
+    h1 {
 
       position: absolute;
       top: 20%;
       right: 10%;
-      
+      font-weight: normal;
       font-size: 2rem;
       color: $mywhite;
       text-align: center;
@@ -200,16 +188,48 @@ header {
   }
 }
 
+.portfolio {
+
+  height: 100vh;
+
+  &__padding {
+    height: 5rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .projects {
+    padding: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .project {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      height: 13rem;
+      margin: 2rem;
+      padding: 0 3rem;
+      background-color: $mygrey;
+    }
+  }
+}
+
 .contact_me {
   background-color: $mygrey;
   height: 100vh;
-  padding-top: 8rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .links {
@@ -239,5 +259,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  //text-align: center;
 }

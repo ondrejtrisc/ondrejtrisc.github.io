@@ -28,10 +28,10 @@
     <section id="home" class="home">
       <div class="home__padding"></div>
       <div class="greeting">
-        <p class="greeting__text">
+        <h1>
           Hello, World! My name is <span class="name">Ondřej Trišč.</span><br>
           I'm a professional software developer.
-        </p>
+        </h1>
       </div>
       <div class="about">
         <p class="about__text">Having learnt the fundamentals of programming in my spare time while working as an English teacher, I made a decision to switch my career path and went through a web development boot camp. Now I'm searching for a position as a junior developer in a company that would provide me with an opportunity to practice my newly acquired skills and learn more by meeting new challenges. I am available to start working in April 2020.</p>
@@ -43,8 +43,8 @@
       <div class="logos">
         <div class="row1">
           <div class="part1">
-            <img src="img/html.png" alt="HTML5">
-            <img src="img/css.png" alt="CSS3">
+            <a href="#css"><img src="img/html.png" alt="HTML5"></a>
+            <a href="#css"><img src="img/css.png" alt="CSS3"></a>
             <img src="img/php.png" alt="PHP">
           </div>
           <div class="part2">
@@ -53,31 +53,87 @@
           </div>
         </div>
         <div class="row2">
-          <img src="img/javascript.png" alt="JavaScript">
-          <img src="img/react.png" alt="React" class="react">
+          <a href="#javascript"><img src="img/javascript.png" alt="JavaScript"></a>
+          <a href="#react"><img src="img/react.png" alt="React" class="react"></a>
           <img src="img/laravel.png" alt="Laravel">
-          <img src="img/java.png" alt="Java">
+          <a href="#java"><img src="img/java.png" alt="Java"></a>
         </div>
       </div>
       
       <div class="description">
-        <p class="description__text">My web development skills come from <a href="https://www.codingbootcamp.cz/" target="_blank">Coding Bootcamp Praha</a> - twelve week full-time full stack web development coding boot camp. My experience with Java comes from my choice to learn programming by building a toy project in it.</p>
+        <p class="description__text">My web development skills come from <a href="https://www.codingbootcamp.cz/" target="_blank">Coding Bootcamp Praha</a> - twelve week full-time full stack web development coding boot camp. My experience with Java comes from my choice to learn programming by building a <a href="#java">toy project</a> in it.</p>
       </div>
     </section>
 
     <section id="portfolio" class="portfolio">
-      <div class="under_construction">UNDER CONSTRUCTION</div>
+      <div class="portfolio__padding"></div>
+      <h2>MY WORK</h2>
+      <div class="projects">
+        <div id="java" class="project">
+          <div>
+            <h3>Expression Interpreter</h3>
+            <p>
+              A toy project I did to learn the fundamentals of programming.
+            </p>
+            <p>
+              <em>Technologies:</em> Java
+            </p>
+          </div>
+        </div>
+        <div id="react" class="project">
+          <div>
+            <h3>Flights</h3>
+              <p>
+                A React application which displays flights based on the data it fetches form an API at kiwi.com.
+              </p>
+              <p>
+                The product of the React hackathon at <a href="https://www.codingbootcamp.cz/" target="_blank">Coding Bootcamp.</a>
+              </p>
+            <p>
+              <em>Technologies:</em> React
+            </p>
+          </div>
+        </div>
+        <div id="javascript" class="project">
+          <div>
+            <h3>Pacman</h3>
+            <p>
+              A simplified version of the classical game.
+            </p>
+            <p>
+              The product of the JavaScript hackathon at <a href="https://www.codingbootcamp.cz/" target="_blank">Coding Bootcamp.</a>
+            </p>
+            <p>
+              <em>Technologies:</em> JavaScript
+            </p>
+          </div>
+        </div>
+        <div id="css" class="project">
+          <div>
+            <h3>Café</h3>
+            <p>
+              A static website of a nonexistent coffeehouse.
+            </p>
+            <p>
+              The product of the HTML/CSS hackathon at <a href="https://www.codingbootcamp.cz/" target="_blank">Coding Bootcamp.</a>
+            </p>
+            <p>
+              <em>Technologies:</em> HTML, CSS
+            </p>
+          </div>
+          </div>
+      </div>
     </section>
 
     <section id="contact_me" class="contact_me">
       <h2>FIND ME HERE</h2>
       <div class="links">
         <a href="https://github.com/ondrejtrisc" target="_blank">
-          <img src="img/github.png" alt="Github" class="github">
+          <img src="img/github.png" alt="GitHub" class="github">
           GitHub: github.com/ondrejtrisc
         </a>
         <a href="https://www.linkedin.com/in/ondrejtrisc" target="_blank">
-          <img src="img/linkedin.png" alt="Linkedin" class="linkedin">
+          <img src="img/linkedin.png" alt="LinkedIn" class="linkedin">
           LinkedIn: linkedin.com/in/ondrejtrisc
         </a>
       </div>

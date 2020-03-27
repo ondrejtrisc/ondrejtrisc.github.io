@@ -82,6 +82,11 @@ header {
     height: 60vh;
     position: relative;
 
+    @media (max-width: 1100px) {
+      background: $myblack;
+      height: 40vh;
+    }
+
     h1 {
 
       position: absolute;
@@ -101,6 +106,9 @@ header {
   .about {
     background-color: $mygrey;
     height: calc(40vh - 5rem);
+    @media (max-width: 1100px) {
+      height: calc(60vh - 5rem);
+    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +198,7 @@ header {
 
 .portfolio {
 
-  height: 100vh;
+  min-height: 100vh;
 
   &__padding {
     height: 5rem;
@@ -212,10 +220,18 @@ header {
       justify-content: center;
       align-items: center;
       width: 40%;
-      height: 13rem;
+      @media (max-width: 1100px) {
+        width: 80%;
+      }
+      min-height: 13rem;
       margin: 2rem;
       padding: 0 3rem;
       background-color: $mygrey;
+
+      .line {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }
@@ -240,6 +256,9 @@ header {
     a {
       margin: 3rem 0;
       display: flex;
+      @media (max-width: 1100px) {
+        flex-direction: column;
+      }
       align-items: center;
       font-size: 1.2rem;
       color: $myblack;

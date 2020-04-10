@@ -57,6 +57,10 @@ header {
         width: 3rem;
         background-color: $mywhite;
 
+        @media (max-width: 800px) {
+          display: none;
+        }
+
         a:hover {
           background-color: $mywhite;
         }
@@ -88,10 +92,12 @@ header {
     }
 
     h1 {
-
       position: absolute;
-      top: 20%;
-      right: 10%;
+      top: 10%;
+      @media (min-width: 800px) {
+        top: 20%;
+        right: 10%;
+      }
       font-weight: normal;
       font-size: 2rem;
       color: $mywhite;
@@ -105,14 +111,19 @@ header {
 
   .about {
     background-color: $mygrey;
-    height: calc(40vh - 5rem);
-    @media (max-width: 1100px) {
+    @media (orientation: landscape) and (min-width: 800px) {
       height: calc(60vh - 5rem);
+    }
+    @media (orientation: landscape) and (min-width: 1100px) {
+      height: calc(40vh - 5rem);
     }
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 5rem;
+    @media (max-width: 800px) {
+      padding: 0 2rem;
+    }
 
     &__text{
       font-size: 1.2rem;
@@ -128,6 +139,9 @@ header {
   }
 
   .logos {
+    @media (max-width: 800px) {
+      display: none;
+    }
     height: calc(60vh + 2rem);
     display: flex;
     flex-direction: column;
@@ -183,11 +197,16 @@ header {
 
   .description {
     background-color: $mygrey;
-    height: calc(40vh - 5rem);
+    @media (orientation: landscape) and (min-width: 800px) {
+      height: calc(40vh - 5rem);
+    }
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 5rem;
+    @media (max-width: 800px) {
+      padding: 0 2rem;
+    }
 
     &__text{
       font-size: 1.2rem;
@@ -209,7 +228,9 @@ header {
   }
 
   .projects {
-    padding: 0 4rem;
+    @media (min-width: 800px){
+      padding: 0 4rem;
+    }
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -236,7 +257,7 @@ header {
   }
 }
 
-.contact_me {
+.contact {
   background-color: $mygrey;
   height: 100vh;
   padding-top: 5rem;
